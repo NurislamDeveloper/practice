@@ -9,7 +9,7 @@ class ReorderableExample extends StatefulWidget {
 }
 
 class _ReorderableListViewExampleState extends State<ReorderableExample> {
-  final List<int> _items = List<int>.generate(50, (int index) => index);
+  final List<int> _items = List<int>.generate(60, (int index) => index);
 
   @override
   Widget build(BuildContext context) {
