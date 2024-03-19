@@ -20,6 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
           backgroundImage: AssetImage(
             'assets/image/boy_with _laptop.jpg',
+             
             ),
         ),
         centerTitle: true,
