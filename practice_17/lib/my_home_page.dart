@@ -12,9 +12,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purpleAccent,
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 0, 25, 249),
+        backgroundColor: Colors.blue,
         centerTitle: true,
         title: RichText(
           text: const TextSpan(
@@ -41,11 +41,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontSize: 25,
                 ),
               ),
+              TextSpan(
+                text: "Amrecia",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
             ],
           ),
         ),
       ),
-      
     );
   }
 }
