@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -21,6 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
             Text.rich(
               TextSpan(
                   text: "Flutter",
@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 25,
                   ),
                   children: [
+                  
                     TextSpan(
                         text: " to the moon",
                         style:  TextStyle(

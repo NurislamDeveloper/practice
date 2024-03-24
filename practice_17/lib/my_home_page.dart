@@ -9,6 +9,21 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int currentIndex = 0;
+  static const List body = [
+    Icon(
+      Icons.home,
+      size: 50,
+    ),
+    Icon(
+      Icons.apps,
+      size: 50,
+    ),
+    Icon(
+      Icons.business,
+      size: 50,
+    )
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,6 +67,35 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+      ),
+      body: Center(
+        child: body.elementAt(currentIndex),
+      ),
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.home),
+            label: "home",
+          ),
+          NavigationDestination(
+            icon: Icon(
+              Icons.apps,
+            ),
+            label: "apps",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.business),
+            label: "business",
+           
+          ),
+        ],
+        selectedIndex: currentIndex,
+        onDestinationSelected: (int index) {
+          setState(() {
+          currentIndex = index;
+           },
+          );
+        },
       ),
     );
   }
