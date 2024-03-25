@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/sliver_app_bar.dart';
 import 'header.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: Hamburger(),
+      home: StretchableSliverAppBar(),
     );
   }
 }
@@ -38,9 +39,13 @@ class _HamburgerState extends State<Hamburger> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
           SliverAppBar(
             pinned: true,
+            onStretchTrigger: () async{
+              
+            },
             title: const Text(
               "Deliver",
             ),

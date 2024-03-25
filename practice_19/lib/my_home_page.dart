@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         onPressed: () {
                           Navigator.pop(context);
-                        },
+                        }
                       ),
                     ),
                   );
