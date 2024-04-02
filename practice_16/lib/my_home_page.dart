@@ -29,7 +29,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 25,
                   ),
                   children: [
-                  
                     TextSpan(
                         text: " to the moon",
                         style:  TextStyle(
