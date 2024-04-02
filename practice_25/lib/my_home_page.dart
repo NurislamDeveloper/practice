@@ -141,38 +141,38 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.blue,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite,
-                size: 26,
-                color: Colors.white,
-              ),
-              label: "Favorite",
-            ),
-              BottomNavigationBarItem(
-              icon: Icon(
-                Icons.car_rental,
-                size: 26,
-                color: Colors.white,
-              ),
-              label: "Car",
-            ),
-                          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.bookmark_border_rounded,
-                size: 26,
-                color: Colors.white,
-              ),
-              label: "BookMark",
-            ),
+        // bottomNavigationBar: BottomNavigationBar(
+        //   backgroundColor: Colors.blue,
+        //   items: const <BottomNavigationBarItem>[
+        //     BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.favorite,
+        //         size: 26,
+        //         color: Colors.white,
+        //       ),
+        //       label: "Favorite",
+        //     ),
+        //       BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.car_rental,
+        //         size: 26,
+        //         color: Colors.white,
+        //       ),
+        //       label: "Car",
+        //     ),
+        //                   BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.bookmark_border_rounded,
+        //         size: 26,
+        //         color: Colors.white,
+        //       ),
+        //       label: "BookMark",
+        //     ),
           
-          ],
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white,
-        ),
+        //   ],
+        //   selectedItemColor: Colors.white,
+        //   unselectedItemColor: Colors.white,
+        // ),
       ),
     );
   }
