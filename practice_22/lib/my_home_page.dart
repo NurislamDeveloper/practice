@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -8,22 +9,43 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          InteractiveViewer(  
-            scaleEnabled: true, // scaleEnabled: true, if I write in here true it's allows me to bring the picture closer
-            constrained: true,//  here I didn't learn everthing with this widget if you wanna use you !
-            boundaryMargin:  EdgeInsets.all(60),
-            child: 
-        Image.asset("assets/image/pingvin.jpg"),
+      appBar: AppBar(
+        title:const Text(
+          "ScrollBar",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
           ),
-        ],
+        ),
       ),
-    );
+      body:Scrollbar(
+        trackVisibility: true,
+              child:ListView.builder(
+                itemCount: 200,
+                // controller: ScrollController(initialScrollOffset: 35),
+                itemBuilder: (context, index) {
+                 return ListTile(
+                  title: Container(
+                  width: double.infinity,
+                  height: 30,
+                  color: Colors.amber,
+                  child: Row(
+                    children: [
+                    const Icon(Icons.account_balance_wallet_outlined),
+                      Text("ScrollBar $index"),
+                     ],
+                    ),
+                   ),
+                  );
+                 },
+                )
+               ),
+          
+        );
   }
 }
